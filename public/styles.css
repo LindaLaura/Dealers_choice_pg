@@ -1,0 +1,36 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: rgb(0, 102, 255);
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  transition: box-shadow 0.5s ease;
+  border-radius: 3px;
+}
+
+img:hover {
+  box-shadow: 2px 2px 2px #5a5a5a;
+}
+
+p {
+  width: 200px;
+}
+
+#book {
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bookInfo {
+  display: inline-block;
+}
