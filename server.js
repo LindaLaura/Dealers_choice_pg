@@ -71,7 +71,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
     }
 });
 
-const port = process.env.DATABASE_URL|| 1337;
+const port = process.env.PORT|| 1337;
 
 const setUp = async() =>{
     try{
