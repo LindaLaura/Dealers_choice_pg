@@ -71,10 +71,10 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
     }
 });
 
+const port = process.env.PORT || 1337;
 
 const setUp = async() =>{
     try{
-        const port = process.env.PORT || 1337;
         await client.connect();
         await syncAndSeed();
         console.log('Connected to database');
